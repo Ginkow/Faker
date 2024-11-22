@@ -5,7 +5,7 @@ $faker = Faker\Factory::create();
 
 try {
     // Connexion à la base de données SQLite existante
-    $db = new PDO('sqlite:./Ecommerce.db');
+    $db = new PDO('sqlite:./Data/Ecommerce.db');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Insertion de données dans la table "user"
